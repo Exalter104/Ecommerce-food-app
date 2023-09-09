@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/models/caegories_model.dart';
+import 'package:food_app/models/categories_model.dart';
+import 'package:food_app/utils/routes/routes_name.dart';
+import 'package:get/get.dart';
 
 class CategoryGridItem extends StatelessWidget {
   const CategoryGridItem({super.key, required this.categoryModel});
@@ -12,7 +14,9 @@ class CategoryGridItem extends StatelessWidget {
     return InkWell(
       splashColor: Theme.of(context).primaryColor,
       borderRadius: BorderRadius.circular(16),
-      onTap: () {},
+      onTap: () {
+        Get.toNamed(RoutesName.mealsScreen);
+      },
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(

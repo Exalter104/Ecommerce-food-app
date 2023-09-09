@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/models/caegories_model.dart';
+import 'package:food_app/models/categories_model.dart';
 import 'package:food_app/models/meal_model.dart';
 
 var availableCategories = [

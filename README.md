@@ -42,4 +42,4 @@ Before you begin, make sure you have the following tools installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/Ecommerce-food-app.git
+   git clone https://github.com/Exalter104/Ecommerce-food-app.git

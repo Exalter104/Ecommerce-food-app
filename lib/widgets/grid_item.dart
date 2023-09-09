@@ -15,7 +15,10 @@ class CategoryGridItem extends StatelessWidget {
       splashColor: Theme.of(context).primaryColor,
       borderRadius: BorderRadius.circular(16),
       onTap: () {
-        Get.toNamed(RoutesName.mealsScreen);
+        Get.toNamed(
+          RoutesName.mealsScreen,
+          arguments: categoryModel,
+        );
       },
       child: Container(
         padding: const EdgeInsets.all(16),

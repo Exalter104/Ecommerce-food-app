@@ -1,12 +1,18 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:food_app/models/categories_model.dart';
 import 'package:food_app/models/meal_model.dart';
 
 class MealsScreen extends StatelessWidget {
-  const MealsScreen({super.key, required this.title, required this.meals});
+  const MealsScreen(
+      {super.key,
+      required this.title,
+      required this.meals,
+      required this.categoryModel});
   final String title;
   final List<Meal> meals;
+  final CategoryModel categoryModel;
   @override
   Widget build(BuildContext context) {
     Widget contents =

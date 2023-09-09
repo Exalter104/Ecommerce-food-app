@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/utils/colors/app_colors.dart';
+import 'package:food_app/views/category_screen.dart';
 import 'package:get/get.dart';
-import 'resources/colors/app_colors.dart';
-import 'resources/routes/routes.dart';
-import 'views/splash_screen.dart';
+
+import 'utils/routes/routes.dart';
 
 void main() {
   runApp(const App());
@@ -17,6 +18,6 @@ class App extends StatelessWidget {
         title: 'Ecommerce Food App',
         theme: theme,
         getPages: AppRoutes.appRoutes(),
-        home: const SplashScreen());
+        home: const CategoryScreen());
   }
 }
